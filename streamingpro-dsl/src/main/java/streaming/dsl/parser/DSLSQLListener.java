@@ -1,4 +1,4 @@
-// Generated from /Users/allwefantasy/CSDNWorkSpace/streamingpro/streamingpro-dsl/src/main/resources/DSLSQL.g4 by ANTLR 4.5.3
+// Generated from DSLSQL.g4 by ANTLR 4.7.1
 
 package streaming.dsl.parser;
 
@@ -29,6 +29,56 @@ public interface DSLSQLListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitSql(DSLSQLParser.SqlContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#as}.
+	 * @param ctx the parse tree
+	 */
+	void enterAs(DSLSQLParser.AsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#as}.
+	 * @param ctx the parse tree
+	 */
+	void exitAs(DSLSQLParser.AsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#into}.
+	 * @param ctx the parse tree
+	 */
+	void enterInto(DSLSQLParser.IntoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#into}.
+	 * @param ctx the parse tree
+	 */
+	void exitInto(DSLSQLParser.IntoContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#saveMode}.
+	 * @param ctx the parse tree
+	 */
+	void enterSaveMode(DSLSQLParser.SaveModeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#saveMode}.
+	 * @param ctx the parse tree
+	 */
+	void exitSaveMode(DSLSQLParser.SaveModeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#where}.
+	 * @param ctx the parse tree
+	 */
+	void enterWhere(DSLSQLParser.WhereContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#where}.
+	 * @param ctx the parse tree
+	 */
+	void exitWhere(DSLSQLParser.WhereContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#whereExpressions}.
+	 * @param ctx the parse tree
+	 */
+	void enterWhereExpressions(DSLSQLParser.WhereExpressionsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#whereExpressions}.
+	 * @param ctx the parse tree
+	 */
+	void exitWhereExpressions(DSLSQLParser.WhereExpressionsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link DSLSQLParser#overwrite}.
 	 * @param ctx the parse tree
@@ -120,6 +170,46 @@ public interface DSLSQLListener extends ParseTreeListener {
 	 */
 	void exitPath(DSLSQLParser.PathContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#commandValue}.
+	 * @param ctx the parse tree
+	 */
+	void enterCommandValue(DSLSQLParser.CommandValueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#commandValue}.
+	 * @param ctx the parse tree
+	 */
+	void exitCommandValue(DSLSQLParser.CommandValueContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#rawCommandValue}.
+	 * @param ctx the parse tree
+	 */
+	void enterRawCommandValue(DSLSQLParser.RawCommandValueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#rawCommandValue}.
+	 * @param ctx the parse tree
+	 */
+	void exitRawCommandValue(DSLSQLParser.RawCommandValueContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#setValue}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetValue(DSLSQLParser.SetValueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#setValue}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetValue(DSLSQLParser.SetValueContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#setKey}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetKey(DSLSQLParser.SetKeyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#setKey}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetKey(DSLSQLParser.SetKeyContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link DSLSQLParser#db}.
 	 * @param ctx the parse tree
 	 */
@@ -130,6 +220,16 @@ public interface DSLSQLListener extends ParseTreeListener {
 	 */
 	void exitDb(DSLSQLParser.DbContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#asTableName}.
+	 * @param ctx the parse tree
+	 */
+	void enterAsTableName(DSLSQLParser.AsTableNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#asTableName}.
+	 * @param ctx the parse tree
+	 */
+	void exitAsTableName(DSLSQLParser.AsTableNameContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link DSLSQLParser#tableName}.
 	 * @param ctx the parse tree
 	 */
@@ -139,6 +239,26 @@ public interface DSLSQLListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitTableName(DSLSQLParser.TableNameContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#functionName}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctionName(DSLSQLParser.FunctionNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#functionName}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctionName(DSLSQLParser.FunctionNameContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DSLSQLParser#colGroup}.
+	 * @param ctx the parse tree
+	 */
+	void enterColGroup(DSLSQLParser.ColGroupContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DSLSQLParser#colGroup}.
+	 * @param ctx the parse tree
+	 */
+	void exitColGroup(DSLSQLParser.ColGroupContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link DSLSQLParser#col}.
 	 * @param ctx the parse tree

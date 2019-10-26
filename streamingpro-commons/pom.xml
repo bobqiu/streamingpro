@@ -4,26 +4,61 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>streamingpro</artifactId>
-        <groupId>streaming.king</groupId>
-        <version>1.0.0</version>
+        <groupId>tech.mlsql</groupId>
+        <version>1.5.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>streamingpro-common</artifactId>
+    <artifactId>streamingpro-common-${spark.bigversion}_${scala.binary.version}</artifactId>
     <dependencies>
-
-
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
-            <version>2.6.0</version>
-            <scope>${scope}</scope>
+            <version>2.6.5</version>
+            <scope>provided</scope>
             <exclusions>
                 <exclusion>
                     <groupId>javax.servlet</groupId>
                     <artifactId>servlet-api</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>javax.servlet-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jersey</groupId>
+                    <artifactId>jersey-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jersey</groupId>
+                    <artifactId>jersey-client</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jersey</groupId>
+                    <artifactId>jersey-json</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jersey.contribs</groupId>
+                    <artifactId>jersey-guice</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jersey</groupId>
+                    <artifactId>jersey-server</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>tech.mlsql</groupId>
+            <artifactId>common-utils_${scala.binary.version}</artifactId>
+            <version>${common-utils-version}</version>
         </dependency>
         <dependency>
             <groupId>com.101tec</groupId>
@@ -36,6 +71,11 @@
                 </exclusion>
 
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.lihaoyi</groupId>
+            <artifactId>os-lib_${scala.binary.version}</artifactId>
+            <version>0.2.9</version>
         </dependency>
     </dependencies>
 
